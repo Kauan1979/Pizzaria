@@ -1,26 +1,82 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Maba Pizza</title>
-    <link rel="stylesheet" href="style_contato.css">
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+    <link rel="stylesheet" type="text/css" href="contato.css"> 
+    <meta charset="utf-8"> 
+    <title>Pixel's Pizzaria</title> 
 </head>
-<body>
-    <h1>Entre em Contato</h1>
-    <p>Preencha o formulário abaixo e entraremos em contato em breve:</p>
-    <form action="enviar_contato.php" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br>
-        <button type="submit">Enviar</button>
-    </form>
-    <nav>
-        <a href="index.html">Voltar para Página Inicial</a>
-    </nav>
-</body>
-</html>
 
+<body>
+
+    <div class="container">
+        <div class="header">
+            <a href="Início.html" class="topo">
+                <img src="Pixels_Logo.png" alt="" width="200px" height="150px" class="logo">
+            </a>
+                <img src="Pixels_Pizzaria.png" alt="" width="500px" height="150px" class="logos">
+
+        </div>
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>            
+            <span class="mid_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        <div class="sidebar">
+
+                <a href="cardápio.html">
+                    <div class="head">
+                        *Cardápio
+                    </div>
+                </a>
+
+                <a href="drinks.html">
+                    <div class="head">
+                        *Bebidas
+                    </div>
+                </a>
+
+                <a href="sobre.html">
+                    <div class="head">
+                        *Sobre Nós
+                    </div>
+                </a>
+
+                <a href="contato.html">
+                    <div class="head">
+                        *Contato
+                    </div>
+                </a>
+
+        </div>
+    </label>
+
+        <div class="content">
+
+            <h1>Entre em Contato</h1>
+            <p>Preencha o formulário abaixo e entraremos em contato em breve:</p>
+            <form action="enviar_contato.php" method="post">
+                <label for="nome">Nome:</label>
+                <textarea type="text" id="nome" name="nome" required></textarea><br>
+                <label for="email">Email:</label>
+                <textarea type="email" id="email" name="email" required></textarea><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+            <nav>
+                <a href="Início.html">Voltar para Página Inicial</a>
+            </nav>
+        </div>
+
+        <div class="footer">
+            <p class="fundo">
+                <a href=""></a>
+            </p>
+        </div>
+    </div>
+
+</body> 
+
+</html>
